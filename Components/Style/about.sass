@@ -1,0 +1,43 @@
+.section_about
+    width: 100%
+    height: calc(100vh - 100px)
+    display: flex
+    flex-direction: column
+    
+
+    article
+        &:nth-child(1)
+            width: 100%
+            position: relative
+            background: #111111
+            overflow: hidden
+            padding: 25px 0
+            white-space: nowrap
+            
+            &:hover
+                .skills_carrossel
+                    animation-play-state: paused
+            
+
+            .skills_carrossel
+                display: inline-block
+                animation: carrossel 20s infinite linear
+                img
+                    height: 60px
+                    margin: 0 50px
+
+
+
+        &:nth-child(2)
+            width: 100%
+            flex-grow: 1
+            background: #1c1c1c
+            
+            
+
+@keyframes carrossel
+    to
+        transform: translateX(0)
+
+    from
+        transform: translateX(-100%)

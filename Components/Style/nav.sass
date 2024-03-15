@@ -1,0 +1,99 @@
+nav
+    position: fixed
+    z-index: 5
+    background: #1c1c1c
+    width: 100%
+    height: 100px
+    display: flex
+    align-items: center
+    font-family: 'Roboto'
+    
+    article
+        &:nth-child(1)
+            width: 300px
+            flex-shrink: 0
+            img
+                height: 95px
+                padding: 0 25px
+                padding-right: 35px
+
+        &:nth-child(n+2):nth-child(-n+5)
+            font-family: 'Protest-Strike'
+            cursor: pointer
+            letter-spacing: 1px
+            font-size: 0.9em
+            flex-grow: 1
+            background: linear-gradient(to bottom, #fdfdfd,  #fffefe)
+            background-clip: text
+            -webkit-background-clip: text
+            -moz-background-clip: text
+            -webkit-text-fill-color: transparent
+            text-shadow: 0px 0px 5px #292929
+            &:hover
+                background: linear-gradient(45deg, #d8a007, #358109,  #0a6e8d)
+                background-clip: text
+                background-size: 200% 200%
+                -webkit-background-clip: text
+                -moz-background-clip: text
+                -webkit-text-fill-color: transparent
+                text-shadow: 0px 0px 7px #1c1c1c
+                animation: animaLink 10s infinite
+
+        &:nth-child(6)
+            width: 120px
+            height: 40px
+            font-family: 'Protest-Strike'
+            border-radius: 10px
+            //background: linear-gradient(45deg, #6fdb15, #1565c0,  #a518b8, #c20404)
+            background: linear-gradient(45deg, #d8a007, #358109,  #0a6e8d)
+            background-size: 100%
+            position: relative
+            padding: 2px
+            animation: animaLink 10s infinite
+
+            div
+                border-radius: 10px
+                width: 100%
+                height: 100%
+                background: #1a1919
+                color: #ffffff
+                display: flex
+                justify-content: center
+                align-items: center
+                cursor: pointer
+
+                
+
+                h2
+                    font-size: 1.5em
+                    font-weight: 600
+                    background: linear-gradient(45deg, #d8a007, #358109,  #0a6e8d)
+                    background-clip: text
+                    -webkit-background-clip: text
+                    -moz-background-clip: text
+                    -webkit-text-fill-color: transparent
+                    text-shadow: 0px 0px 5px #292929
+
+            &:hover
+                padding: 1px
+                background-size: 200% 200%
+                animation: animaLink
+
+            
+        &:nth-child(7)
+            width: 300px
+            flex-shrink: 0
+            display: flex
+            justify-content: flex-end
+            padding-right: 35px
+            
+
+
+@keyframes animaLink
+    0%
+        background-position: 0% 50%
+    50%
+        background-position: 100% 50%
+    100%
+        background-position: 0% 50%
+    

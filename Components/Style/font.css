@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../../src/Fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Josefin";
+  src: url("../../scr/Fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Protest-Guerrilla";
+  src: url("../../src/Fonts/Protest_Guerrilla/ProtestGuerrilla-Regular.ttf");
+}
+@font-face {
+  font-family: "Protest-Strike";
+  src: url("../../src/Fonts/Protest_Guerrilla/ProtestStrike-Regular.ttf");
+}/*# sourceMappingURL=font.css.map */

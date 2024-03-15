@@ -1,0 +1,39 @@
+.section_about {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+}
+.section_about article:nth-child(1) {
+  width: 100%;
+  position: relative;
+  background: #111111;
+  overflow: hidden;
+  padding: 25px 0;
+  white-space: nowrap;
+}
+.section_about article:nth-child(1):hover .skills_carrossel {
+  animation-play-state: paused;
+}
+.section_about article:nth-child(1) .skills_carrossel {
+  display: inline-block;
+  animation: carrossel 20s infinite linear;
+}
+.section_about article:nth-child(1) .skills_carrossel img {
+  height: 60px;
+  margin: 0 50px;
+}
+.section_about article:nth-child(2) {
+  width: 100%;
+  flex-grow: 1;
+  background: #1c1c1c;
+}
+
+@keyframes carrossel {
+  to {
+    transform: translateX(0);
+  }
+  from {
+    transform: translateX(-100%);
+  }
+}/*# sourceMappingURL=about.css.map */
