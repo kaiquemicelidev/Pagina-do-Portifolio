@@ -5,70 +5,127 @@
     margin-top: 100px
 
     article
-        &:nth-child(1)
-            width: 40%
-            background: #1c1c1c
-            display: flex
-            flex-direction: column
-            justify-content: center
-            padding: 0 35px
+        @media screen and (min-width: 1250px) 
+            &:nth-child(1)
+                width: 40%
+                background: #1c1c1c
+                display: flex
+                flex-direction: column
+                justify-content: center
+                padding: 0 35px
 
 
-            p
+                p
 
-                &:nth-child(1)
-                    font-family: 'Protest-Guerrilla'
-                    font-size: 4.5rem
-                    background: linear-gradient(to bottom, #3ddb15, #a5c00b)
-                    background-clip: text
-                    -webkit-background-clip: text
-                    -moz-background-clip: text
-                    -webkit-text-fill-color: transparent
+                    &:nth-child(1)
+                        font-family: 'Protest-Guerrilla'
+                        font-size: 4.5rem
+                        background: linear-gradient(to bottom, #3ddb15, #a5c00b)
+                        background-clip: text
+                        -webkit-background-clip: text
+                        -moz-background-clip: text
+                        -webkit-text-fill-color: transparent
 
-                &:nth-child(2)
-                    font-family: 'Protest-Strike'
-                    padding-left: 140px
+                    &:nth-child(2)
+                        font-family: 'Protest-Strike'
+                        padding-left: 140px
+                        text-align: right
+                        font-size: 2rem
+                        background: linear-gradient(to bottom, #38b818, #0447c2)
+                        background-clip: text
+                        -webkit-background-clip: text
+                        -moz-background-clip: text
+                        -webkit-text-fill-color: transparent
+                        margin-bottom: 40px
+                        
+
+                h3
                     text-align: right
-                    font-size: 2rem
-                    background: linear-gradient(to bottom, #38b818, #0447c2)
-                    background-clip: text
-                    -webkit-background-clip: text
-                    -moz-background-clip: text
-                    -webkit-text-fill-color: transparent
-                    margin-bottom: 40px
-                    
+                    color: #fff
+                    font-family: Roboto
+                        
 
-            h3
-                text-align: right
-                color: #fff
-                font-family: Roboto
-                    
-                    
-                    
-
-
-                
-
-        &:nth-child(2)
-            width: 60%
-            height: 100%
-            position: relative
-
-            img
-                position: absolute
-                z-index: 3
-                width: 100%
+            &:nth-child(2)
+                width: 60%
                 height: 100%
+                position: relative
 
-            div
-                position: absolute
-                z-index: 2
-                background-image: linear-gradient(-45deg,#d8a007, #d8a007, #358109,  #0a6e8d, #0a6e8d)
-                background-size: 300% 300%
-                width: 100%
+                img
+                    position: absolute
+                    z-index: 3
+                    width: 100%
+                    height: 100%
+
+                div
+                    position: absolute
+                    z-index: 2
+                    background-image: linear-gradient(-45deg,#d8a007, #d8a007, #358109,  #0a6e8d, #0a6e8d)
+                    background-size: 300% 300%
+                    width: 100%
+                    height: 100%
+                    animation: animafundo 15s infinite
+
+        @media screen and (min-width: 780px) 
+
+            &:nth-child(1)
+                width: 50%
+                background: #1c1c1c
+                display: flex
+                flex-direction: column
+                justify-content: center
+                padding: 0 35px
+
+
+                p
+
+                    &:nth-child(1)
+                        font-family: 'Protest-Guerrilla'
+                        font-size: 3.5rem
+                        background: linear-gradient(to bottom, #3ddb15, #a5c00b)
+                        background-clip: text
+                        -webkit-background-clip: text
+                        -moz-background-clip: text
+                        -webkit-text-fill-color: transparent
+
+                    &:nth-child(2)
+                        font-family: 'Protest-Strike'
+                        padding-left: 140px
+                        text-align: right
+                        font-size: 1.5rem
+                        background: linear-gradient(to bottom, #38b818, #0447c2)
+                        background-clip: text
+                        -webkit-background-clip: text
+                        -moz-background-clip: text
+                        -webkit-text-fill-color: transparent
+                        margin-bottom: 40px
+                        
+
+                h3
+                    text-align: right
+                    color: #fff
+                    font-family: Roboto
+                    font-size: 1rem
+                        
+
+            &:nth-child(2)
+                width: 50%
                 height: 100%
-                animation: animafundo 15s infinite
-            
+                position: relative
+
+                img
+                    position: absolute
+                    z-index: 3
+                    width: 100%
+                    height: 100%
+
+                div
+                    position: absolute
+                    z-index: 2
+                    background-image: linear-gradient(-45deg,#d8a007, #d8a007, #358109,  #0a6e8d, #0a6e8d)
+                    background-size: 300% 300%
+                    width: 100%
+                    height: 100%
+                    animation: animafundo 15s infinite           
             
 
 
